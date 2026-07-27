@@ -1,4 +1,4 @@
-# [Project Name] — 3D Printed FPV Frame (2S, DJI O4 Pro)
+# 3D printed Fpv Drone — 3D Printed FPV Frame (2S, DJI O4 Pro)
 
 
 ## What is this?
@@ -8,7 +8,7 @@ digital video system. This drone frame will allow for a 4k 100 fps resolution wh
 
 ## Why I built it
 
-I wanted to make this drone because while researching 3d printed drone frames, there just weren't any options that allowed for a budget build with the O4 Pro camera. This led me to want to create this project: a 3d printable, economic drone that keeps performance and quality.
+I wanted to make this drone because, while researching 3D-printed drone frames, there just weren't any options that allowed for a budget build with the O4 Pro camera. This led me to want to create this project: a 3D-printable, economical drone that maintains performance and quality.
 
 ## Specs
 
@@ -24,9 +24,9 @@ I wanted to make this drone because while researching 3d printed drone frames, t
 ## How to build it
 
 1. Print the frame parts — see `CAD/` for source files and `.STL` exports.
-2. [Assembly order — arms, motors, stack mounting, camera/VTX mount, etc.]
-3. [Wiring notes / solder points]
-4. [Firmware flash / config steps, if applicable]
+2. Solder the motors onto the AIO and connect the O4 Pro via the provided cable.
+3. Use the included screws to fasten the AIO and the O4 Pro to the frame base.
+4. PID tuning and others will be added once it is physically built.
 
 ## Files in this repo
 
@@ -37,10 +37,7 @@ I wanted to make this drone because while researching 3d printed drone frames, t
 
 ## Visuals
 
-- [ ] Full 3D model render, fully assembled
-- [ ] Wiring diagram (if no custom PCB)
-- [ ] Photos of the printed frame
-- [ ] Demo video link (required once built/flying, optional for design-only submission)
+
 
 ## Known issues / in progress
 
