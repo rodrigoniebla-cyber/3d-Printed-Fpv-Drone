@@ -14,13 +14,12 @@ I wanted to make this drone because while researching 3d printed drone frames, t
 
 | | |
 |---|---|
-| Frame size | [e.g. 3-inch] |
-| Battery | 2S LiPo, [capacity/C-rating] |
+| Frame size | "2.5" |
+| Battery | 2S LiPo, |
 | VTX/Camera | DJI O4 Pro |
-| Flight controller | [FC model] |
-| ESC | [ESC model, current rating] |
-| Motors | [KV, size] |
-| Propellers | ["2.2", Gemfan 3 blade] |
+| AIO board | Happymodel SuperX HD AIO |
+| Motors | BETAFPV Aquila20 Motors 1103 10500KV |
+| Propellers | "2.2", Gemfan 3 blade |
 
 ## How to build it
 
