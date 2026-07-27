@@ -1,0 +1,11 @@
+Part,Description,Quantity,Unit Cost (USD),Total Cost (USD),Buy Link
+Flight Controller,[Model],1,,,[link]
+ESC,[Model, current rating],1,,,[link]
+Motor,[Model, KV, size],4,,,[link]
+Propeller,[Size, blade count],4 (+ spares),,,[link]
+DJI O4 Pro Air Unit,,1,,,[link]
+Camera,[If separate from VTX unit],1,,,[link]
+Battery,2S LiPo [capacity/C-rating],1,,,[link]
+Frame hardware,M2/M3 screws, standoffs, etc.,1 set,,,[link]
+3D printed parts,PLA/PETG/TPU — printed in-house,,,, 
+,,,,Total:,
