@@ -43,6 +43,3 @@ I wanted to make this drone because, while researching 3D-printed drone frames, 
 
 PID tuning and specific wiring diagram will be implemented once the drone is finalized.
 
-## Credits
-
-[Credit any open-source frame/design this was inspired by, per Macondo's reuse rules.]
