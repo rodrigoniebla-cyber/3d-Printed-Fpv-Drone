@@ -1,11 +1,11 @@
-Part,Description,Quantity,Unit Cost (USD),Total Cost (USD),Buy Link
-Flight Controller,[Model],1,,,[link]
-ESC,[Model, current rating],1,,,[link]
-Motor,[Model, KV, size],4,,,[link]
-Propeller,[Size, blade count],4 (+ spares),,,[link]
-DJI O4 Pro Air Unit,,1,,,[link]
-Camera,[If separate from VTX unit],1,,,[link]
-Battery,2S LiPo [capacity/C-rating],1,,,[link]
-Frame hardware,M2/M3 screws, standoffs, etc.,1 set,,,[link]
-3D printed parts,PLA/PETG/TPU — printed in-house,,,, 
-,,,,Total:,
+Part,Description,Vendor,Quantity,Unit Cost (USD),Total Cost (USD),Buy Link
+DJI O4 Air Pro Unit,VTX/camera air unit,Adorama,1,229.00,229.00,https://www.adorama.com/djio4ap.html
+Flight Controller/ESC,Happymodel SuperX HD AIO - F411 FC +12A 1-2S BLHeli_S ESC + ELRS,GetFPV,1,61.49,61.49,https://www.getfpv.com/happymodel-superx-hd-aio-f411-fc-12a-1-2s-blheli-s-esc-elrs.html
+Motors,BETAFPV Aquila20 1103 Motor (4 Pcs) - 10500KV,GetFPV,1,39.99,39.99,https://betafpv.com/products/1103-brushless-motors-aquila20
+Propellers,Gemfan 2216 3-Blade Propeller (Set of 8) - 1.5mm - Clear Gray,GetFPV,1,3.29,3.29,https://www.getfpv.com/gemfan-2216-pc-3-blade-propeller-set-of-8-1-5mm.html
+Battery,Lumenier 450mAh 2S 80c Micro HV LiPo Battery XT30,GetFPV,1,14.99,14.99,https://www.getfpv.com/lumenier-450mah-2s-80c-micro-hv-lipo-battery-xt30.html
+3D printed frame,Custom-designed frame - printed in-house,N/A,1,0.00,0.00,N/A (see CAD/ folder)
+,,,,,Parts subtotal:,349.76
+,,,,,Adorama cart total (incl. $36.95 shipping):,265.95
+,,,,,GetFPV cart total (free shipping incl. tax/discount):,128.33
+,,,,,Combined cart total:,394.28
