@@ -1,18 +1,14 @@
 # [Project Name] — 3D Printed FPV Frame (2S, DJI O4 Pro)
 
-> Replace this title and everything in `[brackets]` before submitting.
 
 ## What is this?
 
 A custom 3D-printed FPV drone frame built around a 2S battery and the DJI O4 Pro
-digital video system. [1–2 sentences: what makes this frame different from your
-other builds — e.g. size class, why 2S instead of higher voltage, why O4 Pro
-specifically, what problem you were solving.]
+digital video system. This drone frame will allow for a 4k 100 fps resolution while remaining just under $400 and without sacrificing performance or camera quality.
 
 ## Why I built it
 
-[Be personal here — what's the story? What did you want that didn't already
-exist, or what were you improving on from a previous build?]
+I wanted to make this drone because while researching 3d printed drone frames, there just weren't any options that allowed for a budget build with the O4 Pro camera. This led me to want to create this project: a 3d printable, economic drone that keeps performance and quality.
 
 ## Specs
 
@@ -24,8 +20,7 @@ exist, or what were you improving on from a previous build?]
 | Flight controller | [FC model] |
 | ESC | [ESC model, current rating] |
 | Motors | [KV, size] |
-| Propellers | [size, blade count] |
-| Weight (AUW) | [grams] |
+| Propellers | ["2.2", Gemfan 3 blade] |
 
 ## How to build it
 
@@ -50,8 +45,7 @@ exist, or what were you improving on from a previous build?]
 
 ## Known issues / in progress
 
-[List anything unresolved — e.g. tuning not finalized, part still being tested.
-Reviewers want the current real state, not an idealized one.]
+PID tuning and specific wiring diagram will be implemented once the drone is finalized.
 
 ## Credits
 
