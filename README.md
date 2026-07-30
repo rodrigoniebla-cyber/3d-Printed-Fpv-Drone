@@ -32,7 +32,6 @@ I wanted to make this drone because, while researching 3D-printed drone frames, 
 
 - `CAD/` — native Fusion 360 source (`.f3d`) and exported `.STEP` / `.STL` files
 - `BOM/` — bill of materials (CSV) with buy links
-- `Media/` — assembly photos
 
 ## Credits
 For the 3d model of the motors: 
