@@ -32,12 +32,13 @@ I wanted to make this drone because, while researching 3D-printed drone frames, 
 
 - `CAD/` — native Fusion 360 source (`.f3d`) and exported `.STEP` / `.STL` files
 - `BOM/` — bill of materials (CSV) with buy links
-- `Firmware/` — flight controller / VTX config, if customized
-- `Media/` — assembly photos, renders, and demo video link
+- `Media/` — assembly photos
 
-## Visuals
-
-
+## Credits
+For the 3d model of the motors: 
+MultiBuild3D https://grabcad.com/library/1102-betafpv-drone-motor-1 
+For the model of the O4 Pro: 
+Riley Entropy https://grabcad.com/library/dji-o4-air-unit-pro-1
 
 ## Known issues / in progress
 
