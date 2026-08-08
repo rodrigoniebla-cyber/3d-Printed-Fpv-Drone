@@ -32,7 +32,7 @@ I wanted to make this drone because, while researching 3D-printed drone frames, 
 
 - `CAD/` — native Fusion 360 source (`.f3d`) and exported `.STEP` / `.STL` files
 - `BOM/` — bill of materials (CSV) with buy links
-
+-'Media/' - screenshots of the project
 ## Credits
 For the 3d model of the motors: 
 MultiBuild3D https://grabcad.com/library/1102-betafpv-drone-motor-1 
