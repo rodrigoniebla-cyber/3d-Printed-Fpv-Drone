@@ -25,7 +25,8 @@ I wanted to make this drone because, while researching 3D-printed drone frames, 
 ## How to build it
 
 1. Print the frame parts — see `CAD/` for source files and `.STL` exports.
-2. Solder the motors onto the AIO and connect the O4 Pro via the provided cable. You will have to cut one end and solder the wires this way: <img width="1000" height="1000" alt="wiring for 04" src="https://github.com/user-attachments/assets/6397011f-7441-4a11-9c79-c3ca31d0ecd8" />
+2. Solder the motors onto the AIO and connect the O4 Pro via the provided cable. You will have to cut one end and solder the wires this way: <img width="1000" height="1000" alt="wiring for 04" src="https://github.com/user-attachments/assets/6397011f-7441-4a11-9c79-c3ca31d0ecd8" />  <img width="1170" height="1024" alt="oscar lian" src="https://github.com/user-attachments/assets/71569b26-8994-4442-b1a3-1f786e807aaa" />
+
 
 3. Use the included screws to fasten the AIO to the frame, also using the printed plate <img width="2560" height="1664" alt="image" src="https://github.com/user-attachments/assets/9c84b36e-9112-4cad-a624-d9fc1542351c" />
 
