@@ -45,6 +45,9 @@ For the 3d model of the motors:
 MultiBuild3D https://grabcad.com/library/1102-betafpv-drone-motor-1 
 For the model of the O4 Pro: 
 Riley Entropy https://grabcad.com/library/dji-o4-air-unit-pro-1
+FOr the wiring diagrams, Oscar Liang and HappyModel:
+oscarliang.com
+https://www.happymodel.cn/index.php/2023/09/04/superx-hd-elrs-1-2s-aio-flight-controlelr-built-in-12a-esc-and-uart-elrs-receiver-for-digital-whoop/
 
 ## Known issues / in progress
 
