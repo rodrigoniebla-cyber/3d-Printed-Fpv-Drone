@@ -1,0 +1,99 @@
+# Betaflight 4.4.2 CLI paste-in
+# Board: Happymodel SuperX HD AIO ELRS (target CRAZYBEEF4DX, F411, BMI270/ICM42688P)
+# Video: DJI O4 Air Unit via MSP DisplayPort | RX: built-in ELRS on UART2
+# Build: 2S, 1103 10500KV motors, 2.2" props
+#
+# How to use: flash CRAZYBEEF4DX 4.4.2 first (ideally with a clean "defaults" run),
+# then open Betaflight Configurator > CLI, paste everything below, then type "save".
+# This is a settings overlay, not a full factory dump: it sets only what this build needs.
+# Verify the O4 wiring (see notes at the bottom) before powering the O4 on a battery.
+
+defaults nosave
+
+board_name CRAZYBEEF4DX
+manufacturer_id HAMO
+
+# ---------- Features ----------
+feature -RX_PPM
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature OSD
+feature TELEMETRY
+feature AIRMODE
+feature -ANTI_GRAVITY
+
+# ---------- Serial ports ----------
+# UART1 (id 0): MSP + DisplayPort -> DJI O4 (115200)
+# UART2 (id 1): Serial RX -> internal ELRS
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+set serialrx_provider = CRSF
+set serialrx_inverted = OFF
+set serialrx_halfduplex = OFF
+
+# ---------- OSD (DJI O4 = MSP DisplayPort, no analog OSD chip) ----------
+set osd_displayport_device = MSP
+set displayport_msp_serial = 0
+set osd_canvas_width = 53
+set osd_canvas_height = 20
+set osd_units = METRIC
+set vcd_video_system = HD
+
+# ---------- Motors / ESC (BLHeli_S / Bluejay) ----------
+set motor_pwm_protocol = DSHOT300
+set dshot_bidir = ON
+set motor_poles = 12
+set dshot_idle_value = 550
+set motor_output_limit = 100
+
+# ---------- Gyro / loop ----------
+set gyro_lpf1_type = PT1
+set gyro_lpf2_type = PT1
+set pid_process_denom = 2
+
+# ---------- RPM filter (needs bidirectional DShot + Bluejay) ----------
+set rpm_filter_harmonics = 3
+set rpm_filter_min_hz = 100
+
+# ---------- Battery: 2S ----------
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 330
+set vbat_max_cell_voltage = 435
+set battery_meter = ADC
+set current_meter = ADC
+set battery_capacity = 450
+set report_cell_voltage = ON
+
+# ---------- Safety / arming ----------
+set small_angle = 180
+set failsafe_procedure = DROP
+set failsafe_delay = 5
+set beeper_dshot_beacon_tone = 4
+
+# ---------- Modes (AUX1 = arm, AUX2 = angle, AUX3 = beeper) ----------
+# Double-check mode IDs and ranges in the Modes tab after pasting.
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 13 2 1700 2100 0 0
+
+# ---------- Misc ----------
+set name = SuperX-O4-2S
+
+save
+
+# ======================= NOTES =======================
+# 1) O4 wiring: O4 TX -> FC RX1, O4 RX -> FC TX1, shared GND.
+#    If your pads differ, change "serial 0" to the UART you actually used
+#    (UART1 = id 0, UART2 = id 1, UART6 = id 5) and set displayport_msp_serial to match.
+#    Marginal solder joints on TX/RX are the usual cause of the O4 booting
+#    into low-power mode or showing no OSD.
+# 2) dshot_bidir = ON only works with Bluejay on the ESCs. If you are still on stock
+#    BLHeli_S, set dshot_bidir = OFF and rpm_filter_harmonics = 0.
+# 3) 2S power: the O4 Air Unit Pro needs a minimum input voltage that a sagging
+#    2S pack can drop below under punch-outs. Use a fresh HV 2S, keep the leads short,
+#    and add a decent capacitor on the battery pads.
+# 4) Motor poles: 1103 outrunner = 12 poles (9N12P). Change it if your motor spec says otherwise.
+# 5) Mode IDs vary a little between builds; the Modes tab is authoritative.
+# 6) Do not tune PIDs from this paste. Copy over your known-good PIDs/filters if you have them,
+#    or start from the 4.4.2 defaults and do a blackbox tune.
